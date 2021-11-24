@@ -1,0 +1,70 @@
+
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 250px;
+  height: 250px;
+  background-color: rgb(247, 103, 0);
+  border-radius: 18px;
+  transform: rotate(45deg);
+  position: relative;
+}
+.palito1{
+  width: 180px;
+  height: 18px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 50px;
+}
+.palito1::before{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  left: 47px;
+  top: -10px;
+
+}
+.palito1::after{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  left: 140px;
+  top: -10px;
+}
+
+.palito2{
+  width: 150px;
+  height: 18px;
+  position: absolute;
+  background-color: white;
+  left: 50px;
+  top: 100px;
+  transform: rotate(44deg);
+}
+.palito2::after{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  left: 110px;
+  top: -15px;
+}
+
+
+
+
