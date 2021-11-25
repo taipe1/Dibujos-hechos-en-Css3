@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(214, 211, 216);
+}
+.container{
+  width: 30%;
+  height: 35%;
+  margin: 0 auto;
+  background-color: rgb(41, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.figma{
+  width: 100px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.circulo{
+  width: 50px;
+  height: 50px;
+}
+.c1{
+  background-color: rgb(226, 101, 29);
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+}
+.c2{
+  background-color: rgb(219, 99, 99);
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.c3{
+  background-color: blueviolet;  
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+}
+.c4{
+  background-color: rgb(90, 218, 218);
+  border-radius: 35px;
+}
+.c5{
+  background-color: rgb(78, 182, 74);
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}

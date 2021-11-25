@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(198, 206, 212);
+}
+.sandia{
+  width: 340px;
+  height: 180px;
+  background-color: #fd6c64;
+  border-left: 20px solid #5af5b6;
+  border-bottom: 20px solid #5af5b6;
+  border-right: 20px solid #5af5b6;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+span{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  display: inline-block;
+  margin: 20px;
+}
+span:nth-child(13){
+  opacity: 0;
+}
