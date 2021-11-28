@@ -39,13 +39,34 @@ body{
 }
 .estrella{
   position: absolute;
-  top: -20px;
-  left: 658px;
+  top: -27px;
+  left: -12px;
   width: 0;
   height: 0;
   color: rgb(241, 245, 11);
   text-shadow: 1px 1px 13px rgb(189, 201, 28);
-  font-size: 50px;
+  font-size: 58px;
+  animation: vuelta 5s infinite linear;
+}
+@keyframes vuelta{
+  0% {
+    transform: translate(-50%,-50%) rotate(0deg) scale(.4);
+  }
+  25% {
+    transform: translate(-50%,-50%) rotate(0deg) scale(.5);
+  }
+  30% {
+    transform: translate(-50%,-50%) rotate(0deg) scale(.6);
+  }
+  50% {
+    transform: translate(-50%,-50%) rotate(0deg) scale(.5);
+  }
+  70% {
+    transform: translate(-50%,-50%) rotate(0deg) scale(.4);
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(0deg) scale(.5);
+  }
 }
 .ramo1{
   position: absolute;
