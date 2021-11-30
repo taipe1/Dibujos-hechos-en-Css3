@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(55, 57, 155, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* papanoel fondo */
+.papanoel{
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  width: 70%;
+  margin: 0 auto;
+  height:80%;
+
+}
+/* superior */
+.superior{
+  width: 100%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.gorro{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 3%;
+  background-color: rgb(236, 73, 73);
+  border-top-right-radius: 100%;
+  z-index: 1;
+}
+.gorro::before{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  top: -15px;
+  left: -30px;
+  z-index: 1;
+}
+.gorro::after{
+  position: absolute;
+  content: "";
+  width: 135%;
+  height: 45px;
+  background-color: white;
+  bottom: -10%;
+  left: -19%;
+  border-radius: 15px;
+  z-index: 10;
+}
+/* cabeza */
+.cabeza{
+  width: 100%;
+  height: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.inferior{
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border-radius: 50% 50% 50% 0;
+  background-color: white;
+  transform: rotate(-45deg);
+  top: -54%;
+}
+.cara{
+  position: absolute;
+  width: 130px;
+  height: 55px;
+  background-color: bisque;
+  transform: rotate(45deg);
+  top: 48px;
+  left: 72px;
+  border-radius: 30px;
+}
+.ojo1{
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  border-top: 7px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  top: 18px;
+  left: 20%;
+}
+.ojo2{
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  border-top: 7px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  top: 18px;
+  right: 20%;
+}
+.naris{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(248, 220, 185);
+  top: 79%;
+  left: 40%;
+}
+.boca{
+  position: absolute;
+  width: 29px;
+  height: 15px;
+  background-color: #000000;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  top: 50%;
+  left: 41%;
+  transform: rotate(45deg);
+  
+}
