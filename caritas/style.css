@@ -1,0 +1,310 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(230, 206, 177);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  position: relative;
+  width: 60%;
+  height: 10%;
+  border-radius: 30px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+}
+.carita{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.c1{
+  background-color: rgba(57, 57, 250, 0.938);
+}
+.c2{
+  background-color: rgb(228, 65, 65);
+}
+.c3,
+.c4,
+.c5{
+  background-color: rgb(241, 201, 91);
+}
+.c6{
+  background: linear-gradient(180deg, rgb(228, 65, 65),rgb(238, 226, 63));
+}
+/* colorear */
+.signo1{
+  position: absolute;
+  width: 4px;
+  height: 13px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 100% 0 / 0 0 100% 0;
+  left: 12px;
+  top: 20px;
+}
+.signo1::before{
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 rgb(255, 255, 255); 
+  left: -6px;
+  top: 8px;
+  transform: rotate(-90deg);
+}
+.dedos{
+  position: absolute;
+  width: 14px;
+  height: 5px;
+  background-color: white;
+  left: 6px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0 4px white;
+}
+.dedos::before{
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 rgb(255, 255, 255); 
+  left: -15px;
+  top: -7px;
+}
+.dedos::after{
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 rgb(255, 255, 255); 
+  left: -22px;
+  top: -3px;
+  transform: rotate(-46deg);
+}
+.signo2{
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(255, 255, 255);
+  top: 4px;
+  transform: rotate(45deg);
+}
+.signo2::before{
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(248, 248, 248);
+  top: -0px;
+  left: -8px;
+  border-radius: 50%;
+}
+.signo2::after{
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(248, 248, 248);
+  top: -8px;
+  right: 0px;
+  border-radius: 50%;
+}
+.signo3{
+  position: absolute;
+  width: 27px;
+  height: 18px;
+  border-radius: 0 0 25px 25px;
+  background-color: rgba(53, 34, 34, 0.925);
+  top: 23px;
+}
+.signo3::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: black;
+  top: -12px;
+  left: 1px;
+  transform: rotate(25deg);
+  box-shadow: 17px -4px black;
+}
+.signo3::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: black;
+  top: -9px;
+  right: 17px;
+  transform: rotate(-25deg);
+  box-shadow: 17px 5px black; 
+}
+.lengua{
+  position: absolute;
+  width: 22px;
+  height: 13px;
+  border: 1px solid black;
+  top: 3.5px;
+  left: 2.5px;
+  border-radius:  50% 50% 50% 50%;
+  background-color: rgba(243, 85, 85, 0.925);
+}
+.signo4{
+  position: absolute;
+  width: 11px;
+  height: 15px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgba(53, 34, 34, 0.925);
+  top: 26px;
+}
+.signo4::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(15, 15, 15);
+  top: -14px;
+  left: -8px;
+  box-shadow: 20px 0 black;
+}
+.signo4::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 11px;
+  height: 8px;
+  border-top: 2px solid rgb(0, 0, 0);
+  top: -20px;
+  left: -10px;
+}
+.ceja4{
+  position: absolute;
+  border-radius: 50%;
+  width: 11px;
+  height: 8px;
+  border-top: 2px solid rgb(0, 0, 0);
+  top: -20px;
+  right: -10px;
+}
+.signo5{
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  border-radius: 50%;
+  border-top: 2px solid black;
+  top: 35px;
+
+}
+.signo5::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 7.5px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(15, 15, 15);
+  top: -16px;
+  left: -8px;
+  box-shadow: 20px 0 black;
+}
+.signo5::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 9px;
+  height: 5px;
+  border-top: 2px solid rgb(0, 0, 0);
+  top: -22px;
+  left: -10px;
+  transform: rotate(-20deg);
+}
+.ceja1{
+  position: absolute;
+  border-radius: 50%;
+  width: 9px;
+  height: 5px;
+  border-top: 2px solid rgb(0, 0, 0);
+  transform: rotate(20deg);
+  top: -22px;
+  right: -10px;
+}
+.lagrima{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  border: 1px solid black;
+  background-color: rgb(115, 188, 236);
+  border-top-right-radius: 90%;
+  border-bottom-left-radius: 90%;
+  border-top-left-radius: 10px;
+  transform: rotate(-145deg);
+  top: -2px;
+  left: 13px;
+}
+.signo6{
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  border-radius: 50%;
+  border-top: 2px solid black;
+  top: 35px;
+
+}
+.signo6::before{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(15, 15, 15);
+  top: -13px;
+  left: -5px;
+  box-shadow: 20px 0 black;
+}
+.signo6::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 14px;
+  height: 4px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  top: -18px;
+  left: -10px;
+  transform: rotate(15deg);
+}
+.ceja{
+  position: absolute;
+  border-radius: 50%;
+  width: 14px;
+  height: 4px;
+  top: -18px;
+  right: -9px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  transform: rotate(-15deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
