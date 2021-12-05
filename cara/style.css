@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 249, 166);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: relative;
+  width: 60vmin;
+  height: 60vmin;
+  background-color: rgb(253, 227, 110);
+  border-radius: 50%;
+  box-shadow: 2vmin 2vmin rgb(255, 187, 1);
+}
+.ojo{
+  position: absolute;
+  width: 6vmin;
+  height: 9vmin;
+  background-color: rgba(2, 9, 71, 0.918);
+  border-radius: 50%;
+  left: 35%;
+  top: 35%;
+  transform: translate(-35%,-35%);
+  box-shadow: 20vmin 0 rgba(2, 9, 71, 0.918);
+}
+.ojo::before{
+  content: "";
+  position: absolute;
+  width: 2vmin;
+  height: 3.4vmin;
+  background-color: rgb(253, 227, 110);
+  border-radius: 50%;
+  top: 10px;
+  left: 4px;
+  box-shadow: 20vmin 0 rgb(253, 227, 110);;
+}
+.boca{
+  position: absolute;
+  width: 28vmin;
+  height: 14vmin;
+  background-color: rgba(2, 9, 71, 0.918);
+  left: 53%;
+  top: 75%;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transform: translate(-50%,-60%);
+  overflow: hidden;
+}
+.boca::before{
+  position: absolute;
+  content:"";
+  width: 23vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  background-color: rgb(238, 85, 85);
+  top: 30%;
+  left: 9%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
