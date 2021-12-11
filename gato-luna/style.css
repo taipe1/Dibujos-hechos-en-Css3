@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(245, 243, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ventana{
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  background-color: #00327B;
+  outline: 10px solid black;
+  border-radius: .5px;
+  box-shadow: 0 0 15px black;
+  /* overflow: hidden; */
+}
+.ventana::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%,-0%);
+}
+.ventana::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: rgb(0, 0, 0);
+  left: 0%;
+  top: 50%;
+  transform: translate(-0%,-50%);
+}
+.luna{
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-color: rgba(245, 245, 220, 0.918);
+  border-radius: 50%;
+  left: 23%;
+  top: 20%;
+  box-shadow: 0 0 50px 6px white;
+  display: flex;
+  transition: transform 2s;
+}
+.luna:hover{
+  transform: scale(1.3);
+}
+.estrella{
+  position: relative;
+  color: rgba(255, 255, 255, 0.911);
+  font-size: 25px;
+  left: 68%;
+  top: -10px;
+}
+.estrella1{
+  position: relative;
+  color: rgba(255, 255, 255, 0.911);;
+  font-size: 25px;
+  left: 93%;
+}
+.estrella2{
+  position: relative;
+  color: rgba(255, 255, 255, 0.911);;
+  font-size: 25px;
+  left: 60%;
+  top: 75px;
+}
+.estrella3{
+  position: relative;
+  color: rgba(255, 255, 255, 0.911);;
+  font-size: 25px;
+  left: 70%;
+  top: 160px;
+}
+.estrella4{
+  position: relative;
+  color: rgba(255, 255, 255, 0.911);;
+  font-size: 25px;
+  left: 93%;
+  top: 134px;
+}
+.estrella5{
+  position: relative;
+  color: rgba(255, 255, 255, 0.911);;
+  font-size: 25px;
+  left: 10%;
+  top: -25px;
+}
+.estrella,
+.estrella1,
+.estrella2,
+.estrella3,
+.estrella4,
+.estrella5{
+  animation: vibrar 4s infinite ease;
+}
+@keyframes vibrar{
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.gato{
+  position: absolute;
+  width: 35px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  bottom: 3px;
+  left: 10%;
+  border-radius: 9px;
+  box-shadow: 3px 6px rgb(0, 0, 0),
+              3px -4px black;
+}
+.cabeza{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: -22px;
+  left: 14px;
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0);
+}
+.cabeza::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: -9px;
+  left: 2px;
+} 
+.cabeza::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: -9px;
+  left: 10px;
+} 
+.cola{
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  top: 40px;
+  left: 10px;
+  transform-origin: top;
+  animation: moverCola 3s infinite linear;
+}
+@keyframes moverCola{
+  0%{
+    transform: rotate(-30deg);
+  }
+  33%{
+
+    transform: rotate(30deg);
+  }
+  66%{
+    transform: rotate(-30deg);
+  }
+  100%{
+
+    transform: rotate(-10deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
