@@ -108,11 +108,8 @@ body{
   animation: vibrar 4s infinite ease;
 }
 @keyframes vibrar{
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
+  50% {
+    opacity: 0.4;
   }
 }
 .gato{
@@ -166,22 +163,11 @@ body{
   top: 40px;
   left: 10px;
   transform-origin: top;
-  animation: moverCola 3s infinite linear;
+  animation: moverCola 2s infinite linear;
 }
 @keyframes moverCola{
-  0%{
-    transform: rotate(-30deg);
-  }
-  33%{
-
-    transform: rotate(30deg);
-  }
-  66%{
-    transform: rotate(-30deg);
-  }
-  100%{
-
-    transform: rotate(-10deg);
+  50% {
+    transform: rotate(40deg);
   }
 }
 
