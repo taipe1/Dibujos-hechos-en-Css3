@@ -1,30 +1,60 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: azure;
+  background-color: #FFCD9A;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('http://www.fondoswiki.com/Uploads/fondoswiki.com/ImagenesGrandes/paisaje-navideno.jpg');
+  background-position: bottom;
+  background-size: cover;
 }
 .container{
   position: relative;
   width: 320px;
   height: 350px;
-  background-color: #FFCD9A;
+  transition: all 2s ease;
 }
 .gorro{
-
+  position: relative;
+  width: 99px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgb(34, 31, 31);
+  left: 36%;
+  top: 16%;
+  transform: rotate(9deg);
+  z-index: 3;
+}
+.gorro::before{
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 60px;
+  background-color: rgb(34, 31, 31);
+  border-radius: 8px 8px 8px 8px ;
+  left: 13%;
+  top: -145%;
+}
+.gorro::after{
+  content: "";
+  position: absolute;
+  width: 75.5px;
+  height: 10px;
+  background-color: rgb(206, 16, 16);
+  left: 13%;
 }
 .cabeza{
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   left: 50%;
   top: 25%;
   transform: translate(-50%,-25%);
+  z-index: 2;
 }
 .ojos{
   position: absolute;
@@ -36,6 +66,14 @@ body{
   border-radius: 50%;
   background-color: #000;
   box-shadow: 37px 4px rgb(0, 0, 0);
+  animation: cerrarOjos 3s infinite;
+}
+@keyframes cerrarOjos{
+  50%{
+    width: 10px;
+    height: 6px;
+    border-radius: 50%;
+  }
 }
 .nariz{
   position: absolute;
@@ -49,19 +87,41 @@ body{
   border-right: 6px solid transparent;
 }
 .boca{
-  /* a continuarla despues */
   position: absolute;
-  width: ;
+  width:3.3px;
+  height: 3.3px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 80%;
+  left: 45%;
+  transform: translate(-45%,-80%);
+  box-shadow: 4px 0 rgb(0, 0, 0),
+              8px -.4px black,
+              -4px 0px black,
+              -8px -.3px black,
+              -12px -1.9px black,
+              -16px -3.9px black;
+  z-index: 2;
 }
 .cuerpo{
   position: absolute;
   width: 148px;
   height: 144px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   left: 50%;
   top: 63%;
   transform: translate(-50%,-60%);
+  z-index: 1;
+}
+.cabeza,
+.cuerpo{
+  animation: sombra 3s infinite;
+}
+@keyframes sombra{
+  50%{
+    box-shadow: 0 0 3px .4px rgb(126, 152, 207) ;
+  }
 }
 .mano1{
   position: absolute;
@@ -73,6 +133,26 @@ body{
   transform: translate(80%,-10%) 
              rotate(45deg);
 }
+.mano1::before{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(3, 3, 3);
+  left: 14px;
+  top: 8px;
+  transform: rotate(-45deg);
+}
+.mano1::after{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(3, 3, 3);
+  left: 21px;
+  top: -7px;
+  transform: rotate(45deg);
+}
 .mano2{
   position: absolute;
   width: 60px;
@@ -83,6 +163,26 @@ body{
   transform: translate(80%,-19%) 
              rotate(132deg);
 }
+.mano2::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: rgb(3, 3, 3);
+    left: -10px;
+    top: 8px;
+    transform: rotate(-44deg);
+}
+.mano2::after{
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 2px;
+  background-color: rgb(3, 3, 3);
+  left: -9px;
+  top: -11px;
+  transform: rotate(43deg);
+}
 .puntos{
   position: absolute;
   left: 45%;
@@ -91,15 +191,34 @@ body{
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   box-shadow: -1px 17px rgb(5, 5, 5),
               -1px 34px #000;
 }
-
-
-
-
-
+.piso{
+  position: relative;
+  width: 100px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(49, 45, 45, 0.712);
+  left: 46%;
+  transform: translate(-46%,0);
+  transform-origin: left;
+  animation: pisoGrande 3s infinite;
+}
+.container{
+  animation: haciaArriba 3s infinite;
+}
+@keyframes haciaArriba{
+  50%{
+    transform: translateY(20px);
+  }
+}
+@keyframes pisoGrande{
+  50%{
+    transform: scale(.3);
+  }
+}
 
 
 
